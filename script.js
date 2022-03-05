@@ -27,6 +27,7 @@ saveBtn.forEach((save, i) => {
   save.addEventListener("click", (event) => {
     event.preventDefault();
     var store = Array.from(textEl, (text) => text.value);
+    
     var eachTxt;
     textEl.forEach((inputArea) => {
       if (inputArea.id === event.target.name) {
